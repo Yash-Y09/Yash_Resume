@@ -6,7 +6,7 @@
     $message = $_POST["message"];
     
     // Replace with your email address
-    $email_from = 'info@yashp-resume.netlify.app';
+    $email_from = 'info@yash-y09.github.io';
     $to = "prajapati2248@gmail.com";
     $subject = "Contact Form Submission from $name";
     
