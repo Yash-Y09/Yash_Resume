@@ -11732,3 +11732,29 @@ html {
     left: -2vw;
   }
 }
+
+/* Add this CSS to your stylesheet */
+@media (max-width: 576px) {
+  /* Styles for mobile devices (e.g., smartphones) */
+  .text-center {
+      text-align: center; /* Center the "Resume" title text on mobile */
+  }
+
+  .d-flex.flex-column {
+      flex-direction: column; /* Stack the button below the title */
+      align-items: center; /* Center the button horizontally */
+  }
+}
+
+/* Add this CSS to your stylesheet */
+@media (max-width: 991px) {
+  /* Styles for mobile devices (e.g., smartphones) */
+  .text-center.text-lg-end {
+      text-align: right; /* Right-align the button for mobile devices */
+  }
+  
+  .text-center.text-lg-end .btn {
+      display: block; /* Display the button as a block to place it below the title */
+      margin-top: 10px; /* Add some spacing between the title and button for mobile devices */
+  }
+}
