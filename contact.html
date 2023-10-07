@@ -21,6 +21,18 @@
     <link href="css/styles.css" rel="stylesheet" />
     <script src="js/smtp.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KYEHEH94V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6KYEHEH94V');
+    </script>
+
+    
 </head>
 
 <body class="d-flex flex-column">
@@ -287,11 +299,9 @@
                                 var body = "Name: " + name + "<br/> Email: " + email + "<br/> Country Code: " + countryCode + "<br/> Phone: " + phone + "<br/> Message: " + message;
 
                                 console.log(body);
-                                
+
                                 Email.send({
-                                    Host: "smtp.elasticemail.com",
-                                    Username: "kingmekar307@gmail.com",
-                                    Password: "8942D88A8487C4CFF2DBCD2BC121E13921DE",
+                                    SecureToken: "acfa93ef-58c5-4529-a629-bf543734bbcc",
                                     To: "kingmekar307@gmail.com",
                                     From: "kingmekar307@gmail.com",
                                     Subject: "Contact Form Submission from " + name,
@@ -301,8 +311,8 @@
                                         if (message == 'OK') {
                                             swal("Success!", "Your Data Successfully Received", "success");
                                         }
-                                        else{
-                                            swal("Success!", "Your Data Successfully Received", "error");
+                                        else {
+                                            swal("Error", "Your Data is not Received", "error");
                                         }
                                     }
                                 );
